@@ -41,8 +41,7 @@
                 </div>
                 <div class="mb-5">
                     <label for="password" class="mb-2 block uppercase text-gray-500 font-bold">Password:</label>
-                    <input value="{{ old('password') }}" type="password" id="password" name="password"
-                        placeholder="Password de registro"
+                    <input type="password" id="password" name="password" placeholder="Password de registro"
                         class="border p-3 w-full rounded-lg @error('password') border-red-500 @enderror">
                     @error('password')
                         <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
@@ -51,8 +50,8 @@
                 <div class="mb-5">
                     <label for="password_confirmation" class="mb-2 block uppercase text-gray-500 font-bold">Repetir
                         password:</label>
-                    <input value="{{ old('password_confirmation') }}" type="password" id="password_confirmation"
-                        name="password_confirmation" placeholder="Repite tu password"
+                    <input type="password" id="password_confirmation" name="password_confirmation"
+                        placeholder="Repite tu password"
                         class="border p-3 w-full rounded-lg @error('password_confirmation') border-red-500 @enderror">
                     @error('password_confirmation')
                         <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
