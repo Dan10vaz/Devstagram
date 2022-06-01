@@ -15,7 +15,10 @@ class RegisterController extends Controller
     {
         /* dd($request->all()); */
         $this->validate($request, [
-            'name' => 'required|max:20|'
+            'name' => 'required|max:20',
+            'username' => 'required|unique:users|min:3|max:30',
+            'email' => 'required|email|unique:users|max:60',
+            'password' => 'required|min:6|max:20',
         ]);
     }
 }
