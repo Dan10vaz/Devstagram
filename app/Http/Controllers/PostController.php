@@ -8,6 +8,7 @@ class PostController extends Controller
 {
     public function __construct()
     {
+        // autenticamos el usuario para quemuestre el dashboard
         $this->middleware('auth');
     }
 
