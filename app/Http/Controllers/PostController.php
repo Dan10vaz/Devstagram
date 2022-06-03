@@ -16,7 +16,13 @@ class PostController extends Controller
     public function index(User $user)
     {
         return view('dashboard', [
-            'user' => $user
+            'user' => $user //mandamos a la vista la variable
         ]);
+    }
+
+    public function create()
+    {
+        dd('creando posts');
+        /* return view('posts.create'); */
     }
 }
