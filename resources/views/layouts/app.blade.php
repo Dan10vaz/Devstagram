@@ -23,7 +23,7 @@
 
                 <nav class="flex gap-2 items-center">
 
-                    <a href="{{ route('pos') }}"
+                    <a href="{{ route('posts.create') }}"
                         class="flex items-center gap-2 bg-white border p-2 text-gray-600 rounded text-sm uppercase font-bold cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" stroke-width="2">
