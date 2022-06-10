@@ -23,6 +23,6 @@ class LoginController extends Controller
                 'mensaje' => 'El email o la contraseña no son correctos'
             ]);
         }
-        return redirect()->route('posts.index');
+        return redirect()->route('posts.index', auth()->user()->username);
     }
 }
